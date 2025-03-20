@@ -1,2 +1,11 @@
 node_modules
 /.next/
+.next/build-manifest.json
+.next/fallback-build-manifest.json
+.next/trace
+.next/server/middleware-build-manifest.js
+.next/server/pages-manifest.json
+.next/static/chunks/src_app_styles_globals_5536c331.css
+.next/static/chunks/src_app_styles_globals_5536c331.css.map
+.next/static/chunks/src_app_styles_globals_73511378.css
+.next/static/chunks/src_app_styles_globals_73511378.css.map
