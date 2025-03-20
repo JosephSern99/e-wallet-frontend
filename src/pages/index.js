@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { 
   Box, 
   Typography, 
@@ -30,15 +30,15 @@ export default function Wallet() {
   const { wallet, transactions, loading: walletLoading } = useWallet();
   const router = useRouter();
 
-  // useEffect(() => {
-  //   if (!authLoading && !user) {
-  //     router.push('/login');
-  //   }
-  // }, [user, authLoading, router]);
+  useEffect(() => {
+    if (!authLoading && !user) {
+      router.push('/login');
+    }
+  }, [user, authLoading, router]);
 
-  if (authLoading || !user) {
-    router.push('/login');
-  }
+  // if (!user) {
+  //   router.push('/login');
+  // }
 
   return (
     <Box sx={{ py: 3 }}>
