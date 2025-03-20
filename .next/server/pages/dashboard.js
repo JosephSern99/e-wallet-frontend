@@ -1,0 +1,12 @@
+const CHUNK_PUBLIC_PATH = "server/pages/dashboard.js";
+const runtime = require("../chunks/ssr/[turbopack]_runtime.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__01d4956a._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_next_ce9355e6._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_@mui_system_esm_d68f7126._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_@mui_material_7373611f._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_@popperjs_core_lib_62fd8b49._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_lodash_1e460e82._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_recharts_es6_879bd74f._.js");
+runtime.loadChunk("server/chunks/ssr/node_modules_f2118e07._.js");
+runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/pages.js { INNER_PAGE => \"[project]/src/pages/dashboard.js [ssr] (ecmascript)\", INNER_DOCUMENT => \"[project]/src/pages/_document.js [ssr] (ecmascript)\", INNER_APP => \"[project]/src/pages/_app.js [ssr] (ecmascript)\" } [ssr] (ecmascript)", CHUNK_PUBLIC_PATH);
+module.exports = runtime.getOrInstantiateRuntimeModule("[project]/node_modules/next/dist/esm/build/templates/pages.js { INNER_PAGE => \"[project]/src/pages/dashboard.js [ssr] (ecmascript)\", INNER_DOCUMENT => \"[project]/src/pages/_document.js [ssr] (ecmascript)\", INNER_APP => \"[project]/src/pages/_app.js [ssr] (ecmascript)\" } [ssr] (ecmascript)", CHUNK_PUBLIC_PATH).exports;

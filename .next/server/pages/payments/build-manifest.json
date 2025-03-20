@@ -1,0 +1,18 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/payments": [
+      "static/chunks/node_modules_next_dist_eb81a647._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_1b7400a8._.js",
+      "static/chunks/[root of the server]__73acb96f._.js",
+      "static/chunks/src_pages_payments_5771e187._.js",
+      "static/chunks/src_pages_payments_0a90b81a._.js"
+    ]
+  },
+  "ampFirstPages": []
+}

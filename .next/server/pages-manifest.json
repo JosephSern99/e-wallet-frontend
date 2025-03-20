@@ -1,0 +1,12 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/analytics": "pages/analytics.js",
+  "/dashboard": "pages/dashboard.js",
+  "/login": "pages/login.js",
+  "/payments": "pages/payments.js",
+  "/profile": "pages/profile.js",
+  "/settings": "pages/settings.js",
+  "/transactions": "pages/transactions.js",
+  "/wallet": "pages/wallet.js"
+}
