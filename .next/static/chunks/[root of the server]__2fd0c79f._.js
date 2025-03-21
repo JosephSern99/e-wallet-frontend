@@ -2316,17 +2316,11 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Dashboard() {
     _s();
-    const { user, loading: authLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"])();
+    const { user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const { wallet, transactions, loading: walletLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useWallet$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useWallet"])();
     console.log(wallet);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [tab, setTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(0);
-    const [reloaded, setReloaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    // if(!user) {
-    //   router.push('/login');
-    // } else{
-    //   router.push('/dashboard');
-    // }
     const handleTabChange = (event, newValue)=>{
         setTab(newValue);
     };
@@ -2386,7 +2380,7 @@ function Dashboard() {
                         children: "Dashboard"
                     }, void 0, false, {
                         fileName: "[project]/src/pages/dashboard.js",
-                        lineNumber: 104,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -2399,13 +2393,13 @@ function Dashboard() {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/pages/dashboard.js",
-                        lineNumber: 107,
+                        lineNumber: 100,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/dashboard.js",
-                lineNumber: 103,
+                lineNumber: 96,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -2422,12 +2416,12 @@ function Dashboard() {
                             loading: walletLoading
                         }, void 0, false, {
                             fileName: "[project]/src/pages/dashboard.js",
-                            lineNumber: 115,
+                            lineNumber: 108,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/pages/dashboard.js",
-                        lineNumber: 114,
+                        lineNumber: 107,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -2442,12 +2436,12 @@ function Dashboard() {
                             recentTransactions: transactions.slice(0, 5)
                         }, void 0, false, {
                             fileName: "[project]/src/pages/dashboard.js",
-                            lineNumber: 124,
+                            lineNumber: 117,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/pages/dashboard.js",
-                        lineNumber: 123,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$system$2f$esm$2f$Grid$2f$Grid$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Grid$3e$__["Grid"], {
@@ -2469,7 +2463,7 @@ function Dashboard() {
                                             children: "Activity Overview"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/dashboard.js",
-                                            lineNumber: 137,
+                                            lineNumber: 130,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Tabs$2f$Tabs$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tabs$3e$__["Tabs"], {
@@ -2481,37 +2475,37 @@ function Dashboard() {
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Tab$2f$Tab$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tab$3e$__["Tab"], {
                                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$TrendingUp$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/pages/dashboard.js",
-                                                        lineNumber: 146,
+                                                        lineNumber: 139,
                                                         columnNumber: 28
                                                     }, void 0),
                                                     label: "Activity"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 146,
+                                                    lineNumber: 139,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Tab$2f$Tab$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Tab$3e$__["Tab"], {
                                                     icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Receipt$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                         fileName: "[project]/src/pages/dashboard.js",
-                                                        lineNumber: 147,
+                                                        lineNumber: 140,
                                                         columnNumber: 28
                                                     }, void 0),
                                                     label: "Transactions"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 147,
+                                                    lineNumber: 140,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/pages/dashboard.js",
-                                            lineNumber: 140,
+                                            lineNumber: 133,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/dashboard.js",
-                                    lineNumber: 136,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this),
                                 tab === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -2528,12 +2522,12 @@ function Dashboard() {
                                         },
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$CircularProgress$2f$CircularProgress$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CircularProgress$3e$__["CircularProgress"], {}, void 0, false, {
                                             fileName: "[project]/src/pages/dashboard.js",
-                                            lineNumber: 155,
+                                            lineNumber: 148,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/dashboard.js",
-                                        lineNumber: 154,
+                                        lineNumber: 147,
                                         columnNumber: 19
                                     }, this) : chartData.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$client$5d$__$28$ecmascript$29$__["ResponsiveContainer"], {
                                         width: "100%",
@@ -2545,24 +2539,24 @@ function Dashboard() {
                                                     strokeDasharray: "3 3"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 160,
+                                                    lineNumber: 153,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$client$5d$__$28$ecmascript$29$__["XAxis"], {
                                                     dataKey: "date"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 161,
+                                                    lineNumber: 154,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$client$5d$__$28$ecmascript$29$__["YAxis"], {}, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 162,
+                                                    lineNumber: 155,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Tooltip"], {}, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 163,
+                                                    lineNumber: 156,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Line"], {
@@ -2572,7 +2566,7 @@ function Dashboard() {
                                                     name: "Deposits"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 164,
+                                                    lineNumber: 157,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Line"], {
@@ -2582,7 +2576,7 @@ function Dashboard() {
                                                     name: "Withdrawals"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 165,
+                                                    lineNumber: 158,
                                                     columnNumber: 23
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Line"], {
@@ -2592,18 +2586,18 @@ function Dashboard() {
                                                     name: "Transfers"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/dashboard.js",
-                                                    lineNumber: 166,
+                                                    lineNumber: 159,
                                                     columnNumber: 23
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/pages/dashboard.js",
-                                            lineNumber: 159,
+                                            lineNumber: 152,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/dashboard.js",
-                                        lineNumber: 158,
+                                        lineNumber: 151,
                                         columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                         sx: {
@@ -2617,17 +2611,17 @@ function Dashboard() {
                                             children: "No data available for chart"
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/dashboard.js",
-                                            lineNumber: 171,
+                                            lineNumber: 164,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/dashboard.js",
-                                        lineNumber: 170,
+                                        lineNumber: 163,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/pages/dashboard.js",
-                                    lineNumber: 152,
+                                    lineNumber: 145,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
                                     sx: {
@@ -2640,7 +2634,7 @@ function Dashboard() {
                                             onViewTransaction: (tx)=>router.push(`/transactions/${tx.transactionReference}`)
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/dashboard.js",
-                                            lineNumber: 177,
+                                            lineNumber: 170,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -2655,45 +2649,45 @@ function Dashboard() {
                                                 children: "View All Transactions"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/pages/dashboard.js",
-                                                lineNumber: 183,
+                                                lineNumber: 176,
                                                 columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/dashboard.js",
-                                            lineNumber: 182,
+                                            lineNumber: 175,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/dashboard.js",
-                                    lineNumber: 176,
+                                    lineNumber: 169,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/pages/dashboard.js",
-                            lineNumber: 135,
+                            lineNumber: 128,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/pages/dashboard.js",
-                        lineNumber: 134,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/pages/dashboard.js",
-                lineNumber: 112,
+                lineNumber: 105,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/pages/dashboard.js",
-        lineNumber: 102,
+        lineNumber: 95,
         columnNumber: 5
     }, this);
 }
-_s(Dashboard, "bQi8Jech9XYfLO0p9TVsY438R2w=", false, function() {
+_s(Dashboard, "uXRaQSSLqWe1dSNCiqBa6Dg9Vfc=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useWallet$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useWallet"],

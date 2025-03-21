@@ -1,7 +1,11 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
   "/dashboard": "pages/dashboard.js",
+  "/forgot-password": "pages/forgot-password.js",
   "/login": "pages/login.js",
-  "/logout": "pages/logout.js"
+  "/logout": "pages/logout.js",
+  "/profile": "pages/profile.js",
+  "/settings": "pages/settings.js"
 }

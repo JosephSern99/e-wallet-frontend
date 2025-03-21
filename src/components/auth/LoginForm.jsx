@@ -51,7 +51,9 @@ const LoginForm = () => {
       try {
         const result = await ApiService.login(values);
         if (result) {
-          router.push(returnUrl || '/dashboard');
+          router.push('/dashboard').then(() => {
+              window.location.reload();
+          });
         } else {
           setLoginError('Login failed. Please try again.');
         }

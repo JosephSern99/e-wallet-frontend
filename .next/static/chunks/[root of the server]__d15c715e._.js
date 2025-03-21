@@ -699,7 +699,11 @@ const LoginForm = ()=>{
                 try {
                     const result = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].login(values);
                     if (result) {
-                        router.push(returnUrl || '/dashboard');
+                        router.push('/dashboard').then({
+                            "LoginForm.useFormik[formik]": ()=>{
+                                window.location.reload();
+                            }
+                        }["LoginForm.useFormik[formik]"]);
                     } else {
                         setLoginError('Login failed. Please try again.');
                     }
@@ -729,7 +733,7 @@ const LoginForm = ()=>{
                 children: loginError
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                lineNumber: 80,
+                lineNumber: 82,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -748,18 +752,18 @@ const LoginForm = ()=>{
                         position: "start",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Email$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/auth/LoginForm.jsx",
-                            lineNumber: 99,
+                            lineNumber: 101,
                             columnNumber: 15
                         }, void 0)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/LoginForm.jsx",
-                        lineNumber: 98,
+                        lineNumber: 100,
                         columnNumber: 13
                     }, void 0)
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                lineNumber: 85,
+                lineNumber: 87,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$TextField$2f$TextField$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__TextField$3e$__["TextField"], {
@@ -779,12 +783,12 @@ const LoginForm = ()=>{
                         position: "start",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Lock$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "[project]/src/components/auth/LoginForm.jsx",
-                            lineNumber: 120,
+                            lineNumber: 122,
                             columnNumber: 15
                         }, void 0)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/LoginForm.jsx",
-                        lineNumber: 119,
+                        lineNumber: 121,
                         columnNumber: 13
                     }, void 0),
                     endAdornment: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$InputAdornment$2f$InputAdornment$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__InputAdornment$3e$__["InputAdornment"], {
@@ -795,27 +799,27 @@ const LoginForm = ()=>{
                             edge: "end",
                             children: showPassword ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$VisibilityOff$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                                lineNumber: 130,
+                                lineNumber: 132,
                                 columnNumber: 33
                             }, void 0) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$icons$2d$material$2f$esm$2f$Visibility$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                                lineNumber: 130,
+                                lineNumber: 132,
                                 columnNumber: 53
                             }, void 0)
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/LoginForm.jsx",
-                            lineNumber: 125,
+                            lineNumber: 127,
                             columnNumber: 15
                         }, void 0)
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/LoginForm.jsx",
-                        lineNumber: 124,
+                        lineNumber: 126,
                         columnNumber: 13
                     }, void 0)
                 }
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                lineNumber: 105,
+                lineNumber: 107,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -836,17 +840,17 @@ const LoginForm = ()=>{
                         children: "Forgot password?"
                     }, void 0, false, {
                         fileName: "[project]/src/components/auth/LoginForm.jsx",
-                        lineNumber: 139,
+                        lineNumber: 141,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/LoginForm.jsx",
-                    lineNumber: 138,
+                    lineNumber: 140,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                lineNumber: 137,
+                lineNumber: 139,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$Button$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Button$3e$__["Button"], {
@@ -863,12 +867,12 @@ const LoginForm = ()=>{
                     color: "inherit"
                 }, void 0, false, {
                     fileName: "[project]/src/components/auth/LoginForm.jsx",
-                    lineNumber: 161,
+                    lineNumber: 163,
                     columnNumber: 11
                 }, this) : 'Login'
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                lineNumber: 152,
+                lineNumber: 154,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -896,29 +900,29 @@ const LoginForm = ()=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                                lineNumber: 171,
+                                lineNumber: 173,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/auth/LoginForm.jsx",
-                            lineNumber: 170,
+                            lineNumber: 172,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/auth/LoginForm.jsx",
-                    lineNumber: 168,
+                    lineNumber: 170,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/auth/LoginForm.jsx",
-                lineNumber: 167,
+                lineNumber: 169,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/auth/LoginForm.jsx",
-        lineNumber: 69,
+        lineNumber: 71,
         columnNumber: 5
     }, this);
 };
@@ -966,21 +970,9 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Login() {
     _s();
+    ;
     const theme = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$styles$2f$useTheme$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useTheme$3e$__["useTheme"])();
     const isMobile = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$useMediaQuery$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__useMediaQuery$3e$__["useMediaQuery"])(theme.breakpoints.down('md'));
-    // useEffect(() => {
-    //   // If user is already authenticated, redirect to dashboard
-    //   if (!loading && user) {
-    //     router.push('/dashboard');
-    //   }
-    // }, [user, loading, router]);
-    // if (loading) {
-    //   return (
-    //     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    //       {/* You could add a loading spinner here */}
-    //     </Box>
-    //   );
-    // }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$head$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -988,12 +980,12 @@ function Login() {
                     children: "Login | E-Wallet"
                 }, void 0, false, {
                     fileName: "[project]/src/pages/login.js",
-                    lineNumber: 37,
+                    lineNumber: 23,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/pages/login.js",
-                lineNumber: 36,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
@@ -1038,12 +1030,12 @@ function Login() {
                                             priority: true
                                         }, void 0, false, {
                                             fileName: "[project]/src/pages/login.js",
-                                            lineNumber: 68,
+                                            lineNumber: 54,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/login.js",
-                                        lineNumber: 60,
+                                        lineNumber: 46,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1055,7 +1047,7 @@ function Login() {
                                         children: "Welcome to E-Wallet"
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/login.js",
-                                        lineNumber: 76,
+                                        lineNumber: 62,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1068,13 +1060,13 @@ function Login() {
                                         children: "Manage your finances securely with our digital wallet solution. Send, receive, and track your money with ease."
                                     }, void 0, false, {
                                         fileName: "[project]/src/pages/login.js",
-                                        lineNumber: 85,
+                                        lineNumber: 71,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/pages/login.js",
-                                lineNumber: 49,
+                                lineNumber: 35,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Grid$2f$Grid$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1107,7 +1099,7 @@ function Login() {
                                                     children: "Login to Your Account"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/login.js",
-                                                    lineNumber: 116,
+                                                    lineNumber: 102,
                                                     columnNumber: 19
                                                 }, this),
                                                 isMobile && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$Typography$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Typography$3e$__["Typography"], {
@@ -1116,45 +1108,45 @@ function Login() {
                                                     children: "Manage your finances securely with our digital wallet."
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/pages/login.js",
-                                                    lineNumber: 120,
+                                                    lineNumber: 106,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/pages/login.js",
-                                            lineNumber: 115,
+                                            lineNumber: 101,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$auth$2f$LoginForm$2e$jsx__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                             fileName: "[project]/src/pages/login.js",
-                                            lineNumber: 125,
+                                            lineNumber: 111,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/pages/login.js",
-                                    lineNumber: 108,
+                                    lineNumber: 94,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/pages/login.js",
-                                lineNumber: 97,
+                                lineNumber: 83,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/pages/login.js",
-                        lineNumber: 47,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/pages/login.js",
-                    lineNumber: 46,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/pages/login.js",
-                lineNumber: 39,
+                lineNumber: 25,
                 columnNumber: 7
             }, this)
         ]

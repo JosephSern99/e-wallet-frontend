@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Head from 'next/head';
 import {
     Box,
@@ -6,27 +6,16 @@ import {
     Paper,
     Typography,
     useTheme,
-    useMediaQuery, CircularProgress,
+    useMediaQuery,
 } from '@mui/material';
 import Grid from '@mui/material/Grid'; // Changed import to use MUI's Grid component directly
 import LoginForm from '../components/auth/LoginForm';
 import Image from 'next/image';
-import { useAuth } from '../hooks/useAuth';
-import {router} from "next/client";
+;
 
-export default function Login() {
-const { user, isLoading } = useAuth();
+export default function Login() {;
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
-  useEffect(() => {
-      // If user is already authenticated and fully loaded, redirect to dashboard
-  if (user && !isLoading) {
-      router.push('/dashboard');
-  }
-  }, [useAuth]);
-
-
 
   return (
     <>

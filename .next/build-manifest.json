@@ -12,6 +12,14 @@
       "static/chunks/src_pages__app_5771e187._.js",
       "static/chunks/src_pages__app_225ea762._.js"
     ],
+    "/_error": [
+      "static/chunks/[root of the server]__73499ecc._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_beb00741._.js",
+      "static/chunks/[root of the server]__ca38f087._.js",
+      "static/chunks/src_pages__error_5771e187._.js",
+      "static/chunks/src_pages__error_bac399eb._.js"
+    ],
     "/dashboard": [
       "static/chunks/[root of the server]__2fd0c79f._.js",
       "static/chunks/node_modules_next_c9e5c133._.js",
@@ -26,17 +34,29 @@
       "static/chunks/src_pages_dashboard_5771e187._.js",
       "static/chunks/src_pages_dashboard_2dd1cce3._.js"
     ],
+    "/forgot-password": [
+      "static/chunks/node_modules_next_f51381be._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_@mui_system_esm_4759c1dd._.js",
+      "static/chunks/node_modules_@mui_material_6c7e9626._.js",
+      "static/chunks/node_modules_lodash-es_c915315c._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_b8733ec9._.js",
+      "static/chunks/[root of the server]__f90c49db._.js",
+      "static/chunks/src_pages_forgot-password_5771e187._.js",
+      "static/chunks/src_pages_forgot-password_5183920f._.js"
+    ],
     "/login": [
-      "static/chunks/node_modules_next_fbef401b._.js",
+      "static/chunks/node_modules_next_f7dd8941._.js",
       "static/chunks/node_modules_react-dom_82bb97c6._.js",
       "static/chunks/node_modules_@mui_system_esm_3aee701a._.js",
       "static/chunks/node_modules_@mui_material_3d47e111._.js",
       "static/chunks/node_modules_lodash-es_c915315c._.js",
       "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-      "static/chunks/node_modules_526cdc0b._.js",
-      "static/chunks/[root of the server]__e8a00b6d._.js",
+      "static/chunks/node_modules_bebd0b9d._.js",
+      "static/chunks/[root of the server]__d15c715e._.js",
       "static/chunks/src_pages_login_5771e187._.js",
-      "static/chunks/src_pages_login_e8417c90._.js"
+      "static/chunks/src_pages_login_b8e34981._.js"
     ],
     "/logout": [
       "static/chunks/node_modules_next_ce022631._.js",
@@ -46,6 +66,22 @@
       "static/chunks/[root of the server]__9d6266ac._.js",
       "static/chunks/src_pages_logout_5771e187._.js",
       "static/chunks/src_pages_logout_8f68bf14._.js"
+    ],
+    "/profile": [
+      "static/chunks/node_modules_next_dist_eb81a647._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_1b7400a8._.js",
+      "static/chunks/[root of the server]__f6d033bd._.js",
+      "static/chunks/src_pages_profile_5771e187._.js",
+      "static/chunks/src_pages_profile_52aae214._.js"
+    ],
+    "/settings": [
+      "static/chunks/node_modules_next_dist_eb81a647._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_1b7400a8._.js",
+      "static/chunks/[root of the server]__f8a1c03c._.js",
+      "static/chunks/src_pages_settings_5771e187._.js",
+      "static/chunks/src_pages_settings_262130ae._.js"
     ]
   },
   "devFiles": [],
