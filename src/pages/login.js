@@ -1,35 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Head from 'next/head';
 import {
-  Box,
-  Container,
-  Paper,
-  Typography,
-  useTheme,
-  useMediaQuery,
+    Box,
+    Container,
+    Paper,
+    Typography,
+    useTheme,
+    useMediaQuery, CircularProgress,
 } from '@mui/material';
 import Grid from '@mui/material/Grid'; // Changed import to use MUI's Grid component directly
 import LoginForm from '../components/auth/LoginForm';
 import Image from 'next/image';
+import { useAuth } from '../hooks/useAuth';
+import {router} from "next/client";
 
 export default function Login() {
+const { user, isLoading } = useAuth();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  // useEffect(() => {
-  //   // If user is already authenticated, redirect to dashboard
-  //   if (!loading && user) {
-  //     router.push('/dashboard');
-  //   }
-  // }, [user, loading, router]);
+  useEffect(() => {
+      // If user is already authenticated and fully loaded, redirect to dashboard
+  if (user && !isLoading) {
+      router.push('/dashboard');
+  }
+  }, [useAuth]);
 
-  // if (loading) {
-  //   return (
-  //     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-  //       {/* You could add a loading spinner here */}
-  //     </Box>
-  //   );
-  // }
+
 
   return (
     <>

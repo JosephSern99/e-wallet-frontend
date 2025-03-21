@@ -17,7 +17,7 @@ import { AccountBalanceWallet, Logout, Settings, Person } from '@mui/icons-mater
 import Link from 'next/link';
 
 const Header = ({ children }) => {
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
   const router = useRouter();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -32,7 +32,7 @@ const Header = ({ children }) => {
 
   const handleLogout = () => {
     handleClose();
-    logout();
+    router.push('/logout');
   };
 
   const handleProfile = () => {

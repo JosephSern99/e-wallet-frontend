@@ -673,9 +673,9 @@ const AuthProvider = ({ children })=>{
                             const currentTime = Date.now() / 1000;
                             if (decoded.exp < currentTime) {
                                 localStorage.removeItem('token');
-                                setUser(null);
+                                await setUser(null);
                             } else {
-                                setUser(user); // Set the user from the decoded token
+                                await setUser(user); // Set the user from the decoded token
                             }
                         }
                     } catch (err) {
@@ -705,7 +705,6 @@ const AuthProvider = ({ children })=>{
             localStorage.setItem('token', token);
             setUser(data.user);
             console.log('User set after login:', data.user); // Debug log
-            router.push('/dashboard'); // Use router.push to redirect to the dashboard
             return {
                 success: true,
                 data
@@ -795,17 +794,17 @@ const AuthProvider = ({ children })=>{
         error,
         login,
         register,
-        logout,
         verifyEmail,
         resetPassword,
-        confirmResetPassword
+        confirmResetPassword,
+        logout
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AuthContext.Provider, {
         value: value,
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AuthContext.js",
-        lineNumber: 141,
+        lineNumber: 140,
         columnNumber: 10
     }, this);
 };
@@ -1023,7 +1022,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 const Header = ({ children })=>{
     _s();
-    const { user, logout } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"])();
+    const { user } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
     const [anchorEl, setAnchorEl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].useState(null);
     const open = Boolean(anchorEl);
@@ -1035,7 +1034,7 @@ const Header = ({ children })=>{
     };
     const handleLogout = ()=>{
         handleClose();
-        logout();
+        router.push('/logout');
     };
     const handleProfile = ()=>{
         handleClose();
@@ -1267,7 +1266,7 @@ const Header = ({ children })=>{
         columnNumber: 5
     }, this);
 };
-_s(Header, "o0GQ8fHMMdyzp9rJFzjL4FsJERw=", false, function() {
+_s(Header, "q0MCbeoITzVfv1izPuLrlQbUY3A=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"]

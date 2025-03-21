@@ -24,9 +24,9 @@ export const AuthProvider = ({ children }) => {
           
           if (decoded.exp < currentTime) {
             localStorage.removeItem('token');
-            setUser(null);
+            await setUser(null);
           } else {
-            setUser(user); // Set the user from the decoded token
+            await setUser(user); // Set the user from the decoded token
           }
         }
       } catch (err) {
@@ -61,8 +61,7 @@ export const AuthProvider = ({ children }) => {
       setUser(data.user);
       console.log('User set after login:', data.user); // Debug log
 
-      router.push('/dashboard'); // Use router.push to redirect to the dashboard
-      
+
       return { success: true, data };
     } catch (err) {
       console.error('Login error:', err); // Log the error for debugging
@@ -132,10 +131,10 @@ export const AuthProvider = ({ children }) => {
     error,
     login,
     register,
-    logout,
     verifyEmail,
     resetPassword,
-    confirmResetPassword
+    confirmResetPassword,
+    logout
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

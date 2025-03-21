@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import { useRouter } from 'next/router';
 import { 
   Box,
@@ -25,17 +25,18 @@ import TransactionHistory from '../components/transaction/TransactionHistory';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 export default function Dashboard() {
-  const { user } = useAuth();
+  const { user, loading: authLoading } = useAuth();
   const { wallet, transactions, loading: walletLoading } = useWallet();
   console.log(wallet);
   const router = useRouter();
   const [tab, setTab] = useState(0);
+  const [reloaded, setReloaded] = useState(false);
 
-  // useEffect(() => {
-  //   if (!authLoading && !user) {
-  //     router.push('/login');
-  //   }
-  // }, [user, authLoading, router]);
+  // if(!user) {
+  //   router.push('/login');
+  // } else{
+  //   router.push('/dashboard');
+  // }
 
   const handleTabChange = (event, newValue) => {
     setTab(newValue);

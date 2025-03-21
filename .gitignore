@@ -1,2 +1,13 @@
 node_modules
 .next/
+.next/trace
+.next/trace
+.next/server/chunks/ssr/\[root of the server]__01d4956a._.js
+.next/server/chunks/ssr/\[root of the server]__01d4956a._.js.map
+.next/server/chunks/ssr/\[root of the server]__f3820633._.js
+.next/server/chunks/ssr/\[root of the server]__f3820633._.js.map
+.next/static/chunks/\[root of the server]__2fd0c79f._.js
+.next/static/chunks/\[root of the server]__2fd0c79f._.js.map
+.next/static/chunks/\[root of the server]__207dad75._.js
+.next/static/chunks/\[root of the server]__207dad75._.js.map
+.next/static/development/_buildManifest.js
