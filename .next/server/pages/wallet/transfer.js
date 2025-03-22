@@ -1,6 +1,6 @@
 const CHUNK_PUBLIC_PATH = "server/pages/wallet/transfer.js";
 const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
-runtime.loadChunk("server/chunks/ssr/[root of the server]__fc648ef6._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__ea1873c1._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_a28cbea5._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@mui_system_esm_1ca1a180._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@mui_material_667de015._.js");

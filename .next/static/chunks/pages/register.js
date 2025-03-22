@@ -1,10 +1,12 @@
 __turbopack_load_page_chunks__("/register", [
-  "static/chunks/node_modules_next_90601b25._.js",
+  "static/chunks/node_modules_next_9afad7a9._.js",
   "static/chunks/node_modules_react-dom_82bb97c6._.js",
-  "static/chunks/node_modules_@mui_system_esm_3827970f._.js",
-  "static/chunks/node_modules_@mui_material_8cd123f2._.js",
-  "static/chunks/node_modules_d97ae763._.js",
-  "static/chunks/[root of the server]__78a4a799._.js",
-  "static/chunks/src_pages_wallet_index_5771e187.js",
-  "static/chunks/src_pages_wallet_index_0eec724b.js"
+  "static/chunks/node_modules_@mui_system_esm_7eb159ec._.js",
+  "static/chunks/node_modules_@mui_material_232dd30a._.js",
+  "static/chunks/node_modules_lodash-es_c915315c._.js",
+  "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+  "static/chunks/node_modules_29b6e1c8._.js",
+  "static/chunks/[root of the server]__ba3e0588._.js",
+  "static/chunks/src_pages_register_5771e187._.js",
+  "static/chunks/src_pages_register_375fd0ff._.js"
 ])

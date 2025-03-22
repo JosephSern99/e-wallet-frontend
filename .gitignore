@@ -2,20 +2,8 @@ node_modules
 .next/
 .next/trace
 .next/trace
-.next/server/chunks/ssr/\[root of the server]__01d4956a._.js
-.next/server/chunks/ssr/\[root of the server]__01d4956a._.js.map
-.next/server/chunks/ssr/\[root of the server]__f3820633._.js
-.next/server/chunks/ssr/\[root of the server]__f3820633._.js.map
-.next/static/chunks/\[root of the server]__2fd0c79f._.js
-.next/static/chunks/\[root of the server]__2fd0c79f._.js.map
-.next/static/chunks/\[root of the server]__207dad75._.js
-.next/static/chunks/\[root of the server]__207dad75._.js.map
-.next/static/development/_buildManifest.js
+.next/server/chunks/
+.next/static/development/
 .next/build-manifest.json
-.next/cache/images/2KOpNlptLHNFucBqA747NjqiX_S16P08cJv1rUUn2qE/60.1742471328014.2_7zkLMtZR7bPxO95NYdSONqph6Iav6vdRqNJRGfNOE.Vy8iMTFkMi0xOTVhZDMxNmIzOSI.webp
-.next/server/middleware-build-manifest.js
-.next/server/pages-manifest.json
-.next/server/pages/login.js
-.next/server/pages/login/build-manifest.json
-.next/static/chunks/src_pages_login_5771e187._.js
-.next/static/chunks/pages/login.js
+.next/cache/images/
+.next/server/

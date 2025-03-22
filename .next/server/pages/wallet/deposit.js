@@ -1,6 +1,6 @@
 const CHUNK_PUBLIC_PATH = "server/pages/wallet/deposit.js";
 const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
-runtime.loadChunk("server/chunks/ssr/[root of the server]__451bdc92._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__d6e193d5._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_589007c5._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@mui_system_esm_095762cf._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@mui_material_2479b7ee._.js");

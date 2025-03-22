@@ -1,11 +1,12 @@
 {
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
+  "/analytics": "pages/analytics.js",
   "/dashboard": "pages/dashboard.js",
-  "/forgot-password": "pages/forgot-password.js",
-  "/login": "pages/login.js",
-  "/logout": "pages/logout.js",
-  "/profile": "pages/profile.js",
-  "/settings": "pages/settings.js"
+  "/payments": "pages/payments.js",
+  "/transactions": "pages/transactions.js",
+  "/wallet": "pages/wallet.js",
+  "/wallet/deposit": "pages/wallet/deposit.js",
+  "/wallet/transfer": "pages/wallet/transfer.js",
+  "/wallet/withdraw": "pages/wallet/withdraw.js"
 }

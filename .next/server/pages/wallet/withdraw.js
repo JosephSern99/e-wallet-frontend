@@ -1,6 +1,6 @@
 const CHUNK_PUBLIC_PATH = "server/pages/wallet/withdraw.js";
 const runtime = require("../../chunks/ssr/[turbopack]_runtime.js");
-runtime.loadChunk("server/chunks/ssr/[root of the server]__f8402df8._.js");
+runtime.loadChunk("server/chunks/ssr/[root of the server]__99275a52._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_next_bb0f57a1._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@mui_system_esm_1ca1a180._.js");
 runtime.loadChunk("server/chunks/ssr/node_modules_@mui_material_0f0e1409._.js");

@@ -1293,9 +1293,9 @@ const AuthProvider = ({ children })=>{
                             const currentTime = Date.now() / 1000;
                             if (decoded.exp < currentTime) {
                                 localStorage.removeItem('token');
-                                setUser(null);
+                                await setUser(null);
                             } else {
-                                setUser(user); // Set the user from the decoded token
+                                await setUser(user); // Set the user from the decoded token
                             }
                         }
                     } catch (err) {
@@ -1325,7 +1325,6 @@ const AuthProvider = ({ children })=>{
             localStorage.setItem('token', token);
             setUser(data.user);
             console.log('User set after login:', data.user); // Debug log
-            router.push('/dashboard'); // Use router.push to redirect to the dashboard
             return {
                 success: true,
                 data
@@ -1415,17 +1414,17 @@ const AuthProvider = ({ children })=>{
         error,
         login,
         register,
-        logout,
         verifyEmail,
         resetPassword,
-        confirmResetPassword
+        confirmResetPassword,
+        logout
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AuthContext.Provider, {
         value: value,
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AuthContext.js",
-        lineNumber: 141,
+        lineNumber: 140,
         columnNumber: 10
     }, this);
 };

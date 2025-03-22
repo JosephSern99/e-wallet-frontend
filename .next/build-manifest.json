@@ -12,13 +12,15 @@
       "static/chunks/src_pages__app_5771e187._.js",
       "static/chunks/src_pages__app_225ea762._.js"
     ],
-    "/_error": [
-      "static/chunks/[root of the server]__73499ecc._.js",
+    "/analytics": [
+      "static/chunks/[root of the server]__e9279277._.js",
+      "static/chunks/node_modules_next_dist_18b58331._.js",
       "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_beb00741._.js",
-      "static/chunks/[root of the server]__ca38f087._.js",
-      "static/chunks/src_pages__error_5771e187._.js",
-      "static/chunks/src_pages__error_bac399eb._.js"
+      "static/chunks/node_modules_lodash_4020cdcd._.js",
+      "static/chunks/node_modules_recharts_es6_33fb694c._.js",
+      "static/chunks/node_modules_5a4015d2._.js",
+      "static/chunks/src_pages_analytics_5771e187._.js",
+      "static/chunks/src_pages_analytics_704b5be0._.js"
     ],
     "/dashboard": [
       "static/chunks/[root of the server]__2fd0c79f._.js",
@@ -34,54 +36,72 @@
       "static/chunks/src_pages_dashboard_5771e187._.js",
       "static/chunks/src_pages_dashboard_2dd1cce3._.js"
     ],
-    "/forgot-password": [
-      "static/chunks/node_modules_next_f51381be._.js",
-      "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_@mui_system_esm_4759c1dd._.js",
-      "static/chunks/node_modules_@mui_material_6c7e9626._.js",
-      "static/chunks/node_modules_lodash-es_c915315c._.js",
-      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-      "static/chunks/node_modules_b8733ec9._.js",
-      "static/chunks/[root of the server]__f90c49db._.js",
-      "static/chunks/src_pages_forgot-password_5771e187._.js",
-      "static/chunks/src_pages_forgot-password_5183920f._.js"
-    ],
-    "/login": [
-      "static/chunks/node_modules_next_f7dd8941._.js",
-      "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_@mui_system_esm_3aee701a._.js",
-      "static/chunks/node_modules_@mui_material_3d47e111._.js",
-      "static/chunks/node_modules_lodash-es_c915315c._.js",
-      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-      "static/chunks/node_modules_bebd0b9d._.js",
-      "static/chunks/[root of the server]__d15c715e._.js",
-      "static/chunks/src_pages_login_5771e187._.js",
-      "static/chunks/src_pages_login_b8e34981._.js"
-    ],
-    "/logout": [
-      "static/chunks/node_modules_next_ce022631._.js",
-      "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-      "static/chunks/node_modules_5f10420e._.js",
-      "static/chunks/[root of the server]__9d6266ac._.js",
-      "static/chunks/src_pages_logout_5771e187._.js",
-      "static/chunks/src_pages_logout_8f68bf14._.js"
-    ],
-    "/profile": [
+    "/payments": [
       "static/chunks/node_modules_next_dist_eb81a647._.js",
       "static/chunks/node_modules_react-dom_82bb97c6._.js",
       "static/chunks/node_modules_1b7400a8._.js",
-      "static/chunks/[root of the server]__f6d033bd._.js",
-      "static/chunks/src_pages_profile_5771e187._.js",
-      "static/chunks/src_pages_profile_52aae214._.js"
+      "static/chunks/[root of the server]__73acb96f._.js",
+      "static/chunks/src_pages_payments_5771e187._.js",
+      "static/chunks/src_pages_payments_0a90b81a._.js"
     ],
-    "/settings": [
-      "static/chunks/node_modules_next_dist_eb81a647._.js",
+    "/transactions": [
+      "static/chunks/node_modules_next_14ca55d5._.js",
       "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_1b7400a8._.js",
-      "static/chunks/[root of the server]__f8a1c03c._.js",
-      "static/chunks/src_pages_settings_5771e187._.js",
-      "static/chunks/src_pages_settings_262130ae._.js"
+      "static/chunks/node_modules_@mui_system_esm_f8fdf8e1._.js",
+      "static/chunks/node_modules_@mui_material_289b1d49._.js",
+      "static/chunks/node_modules_@popperjs_core_lib_525b6336._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_7f5c7779._.js",
+      "static/chunks/[root of the server]__7a1c451e._.js",
+      "static/chunks/src_pages_transactions_5771e187._.js",
+      "static/chunks/src_pages_transactions_0e72a5f2._.js"
+    ],
+    "/wallet": [
+      "static/chunks/node_modules_next_14ca55d5._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_@mui_system_esm_3827970f._.js",
+      "static/chunks/node_modules_@mui_material_8cd123f2._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_62688ee9._.js",
+      "static/chunks/[root of the server]__05b52132._.js",
+      "static/chunks/src_pages_wallet_index_5771e187.js",
+      "static/chunks/src_pages_wallet_index_0236fa5e.js"
+    ],
+    "/wallet/deposit": [
+      "static/chunks/node_modules_next_14ca55d5._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_@mui_system_esm_1853a5a6._.js",
+      "static/chunks/node_modules_@mui_material_3bd67b10._.js",
+      "static/chunks/node_modules_lodash-es_c915315c._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_7e3e82ea._.js",
+      "static/chunks/[root of the server]__95372ff4._.js",
+      "static/chunks/src_pages_wallet_deposit_5771e187.js",
+      "static/chunks/src_pages_wallet_deposit_2aa4aabe.js"
+    ],
+    "/wallet/transfer": [
+      "static/chunks/node_modules_next_14ca55d5._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_@mui_system_esm_50bf5fb2._.js",
+      "static/chunks/node_modules_@mui_material_378d743f._.js",
+      "static/chunks/node_modules_lodash-es_c915315c._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_c93c0bf6._.js",
+      "static/chunks/[root of the server]__523ce085._.js",
+      "static/chunks/src_pages_wallet_transfer_5771e187.js",
+      "static/chunks/src_pages_wallet_transfer_dc4d7a2d.js"
+    ],
+    "/wallet/withdraw": [
+      "static/chunks/node_modules_next_14ca55d5._.js",
+      "static/chunks/node_modules_react-dom_82bb97c6._.js",
+      "static/chunks/node_modules_@mui_system_esm_50bf5fb2._.js",
+      "static/chunks/node_modules_@mui_material_d8d57e94._.js",
+      "static/chunks/node_modules_lodash-es_c915315c._.js",
+      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
+      "static/chunks/node_modules_7db70042._.js",
+      "static/chunks/[root of the server]__e6322279._.js",
+      "static/chunks/src_pages_wallet_withdraw_5771e187.js",
+      "static/chunks/src_pages_wallet_withdraw_ec2f47f1.js"
     ]
   },
   "devFiles": [],

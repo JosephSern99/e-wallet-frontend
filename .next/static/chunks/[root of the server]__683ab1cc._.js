@@ -673,9 +673,9 @@ const AuthProvider = ({ children })=>{
                             const currentTime = Date.now() / 1000;
                             if (decoded.exp < currentTime) {
                                 localStorage.removeItem('token');
-                                setUser(null);
+                                await setUser(null);
                             } else {
-                                setUser(user); // Set the user from the decoded token
+                                await setUser(user); // Set the user from the decoded token
                             }
                         }
                     } catch (err) {
@@ -705,7 +705,6 @@ const AuthProvider = ({ children })=>{
             localStorage.setItem('token', token);
             setUser(data.user);
             console.log('User set after login:', data.user); // Debug log
-            router.push('/dashboard'); // Use router.push to redirect to the dashboard
             return {
                 success: true,
                 data
@@ -795,17 +794,17 @@ const AuthProvider = ({ children })=>{
         error,
         login,
         register,
-        logout,
         verifyEmail,
         resetPassword,
-        confirmResetPassword
+        confirmResetPassword,
+        logout
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(AuthContext.Provider, {
         value: value,
         children: children
     }, void 0, false, {
         fileName: "[project]/src/context/AuthContext.js",
-        lineNumber: 141,
+        lineNumber: 140,
         columnNumber: 10
     }, this);
 };
@@ -2096,14 +2095,20 @@ function Wallet() {
     const { user, loading: authLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"])();
     const { wallet, transactions, loading: walletLoading } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useWallet$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useWallet"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    // useEffect(() => {
-    //   if (!authLoading && !user) {
-    //     router.push('/login');
-    //   }
-    // }, [user, authLoading, router]);
-    if (authLoading || !user) {
-        router.push('/login');
-    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Wallet.useEffect": ()=>{
+            if (!authLoading && !user) {
+                router.push('/login');
+            }
+        }
+    }["Wallet.useEffect"], [
+        user,
+        authLoading,
+        router
+    ]);
+    // if (!user) {
+    //   router.push('/login');
+    // }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$Box$2e$js__$5b$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Box$3e$__["Box"], {
         sx: {
             py: 3
@@ -2391,7 +2396,7 @@ function Wallet() {
         columnNumber: 5
     }, this);
 }
-_s(Wallet, "m3B/qC2rPCxl6bH3cVpZ24VaDME=", false, function() {
+_s(Wallet, "LfBgj+D+LB/mfAX19qdRag0L6dQ=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useAuth$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useAuth"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$hooks$2f$useWallet$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useWallet"],
