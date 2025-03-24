@@ -71,20 +71,24 @@ const ApiService = {
     return response.data;
   },
   
-  deposit: async (amount) => {
-    const response = await api.post('/wallet/deposit', { amount });
+  deposit: async (walletId, amount, description, type, categoryid) => {
+    const response = await api.post('/wallet/deposit', { walletId, amount, description, type, categoryid });
     return response.data;
   },
   
-  withdraw: async (amount) => {
-    const response = await api.post('/wallet/withdraw', { amount });
+  withdraw: async (walletId, amount, description, type, categoryid) => {
+    const response = await api.post('/wallet/withdraw', { walletId, amount, description, type, categoryid });
     return response.data;
   },
   
-  transfer: async (recipientWalletNumber, amount) => {
+  transfer: async (recipientWalletNumber, amount, description, type, categoryid, walletId) => {
     const response = await api.post('/wallet/transfer', {
       recipientWalletNumber,
       amount,
+      description,
+      type,
+      categoryid,
+      walletId
     });
 
     return response.data;

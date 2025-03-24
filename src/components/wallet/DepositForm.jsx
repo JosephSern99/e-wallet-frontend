@@ -50,7 +50,11 @@ const DepositForm = ({ onSuccess }) => {
       cardNumber: '',
       cardholderName: '',
       expiryDate: '',
-      cvv: ''
+      cvv: '',
+      walletId: 1,
+      description: 'Deposit to wallet',
+      type: 'DEPOSIT',
+      categoryid: 2
     },
     validationSchema: depositSchema,
     onSubmit: async (values) => {
@@ -59,7 +63,7 @@ const DepositForm = ({ onSuccess }) => {
       setProcessing(true);
       
       try {
-        await deposit(values.amount);
+        await deposit(values.walletId, values.amount, values.description, values.type, values.categoryid);
         setSuccess('Deposit successful! Your wallet has been credited.');
         formik.resetForm();
         if (onSuccess) onSuccess();

@@ -34,7 +34,11 @@ const WithdrawForm = ({ onSuccess }) => {
 
   const formik = useFormik({
     initialValues: {
-      amount: ''
+      amount: '',
+      description: 'Withdrawal from wallet',
+      type: 'WITHDRAWAL',
+      categoryid: 2,
+      walletId: 1
     },
     validationSchema: withdrawSchema,
     onSubmit: async (values) => {
@@ -43,7 +47,7 @@ const WithdrawForm = ({ onSuccess }) => {
       setProcessing(true);
       
       try {
-        await withdraw(values.amount);
+        await withdraw(values.walletId, values.amount, values.description, values.type, values.categoryid);
         setSuccess('Withdrawal successful!');
         formik.resetForm();
         if (onSuccess) onSuccess();

@@ -46,9 +46,9 @@ export const WalletProvider = ({ children }) => {
     }
   }, [user]);
 
-  const deposit = async (amount) => {
+  const deposit = async (walletId, amount, description, type, categoryid) => {
     try {
-      const response = await ApiService.deposit(amount);
+      const response = await ApiService.deposit(walletId, amount, description, type, categoryid);
       await fetchWallet();
       return response.data;
     } catch (err) {
@@ -56,9 +56,9 @@ export const WalletProvider = ({ children }) => {
     }
   };
 
-  const withdraw = async (amount) => {
+  const withdraw = async (walletId, amount, description, type, categoryid) => {
     try {
-      const response = await ApiService.withdraw(amount);
+      const response = await ApiService.withdraw(walletId, amount, description, type, categoryid);
       await fetchWallet();
       return response.data;
     } catch (err) {
@@ -66,9 +66,9 @@ export const WalletProvider = ({ children }) => {
     }
   };
 
-  const transfer = async (recipientWalletNumber, amount, description) => {
+  const transfer = async (recipientWalletNumber, amount, description, type, categoryid, walletId) => {
     try {
-      const response = await ApiService.transfer(recipientWalletNumber, amount, description);
+      const response = await ApiService.transfer(recipientWalletNumber, amount, description, type, categoryid, walletId);
       await fetchWallet();
       return response.data;
     } catch (err) {

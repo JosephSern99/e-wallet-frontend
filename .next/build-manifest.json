@@ -12,16 +12,6 @@
       "static/chunks/src_pages__app_5771e187._.js",
       "static/chunks/src_pages__app_225ea762._.js"
     ],
-    "/analytics": [
-      "static/chunks/[root of the server]__e9279277._.js",
-      "static/chunks/node_modules_next_dist_18b58331._.js",
-      "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_lodash_4020cdcd._.js",
-      "static/chunks/node_modules_recharts_es6_33fb694c._.js",
-      "static/chunks/node_modules_5a4015d2._.js",
-      "static/chunks/src_pages_analytics_5771e187._.js",
-      "static/chunks/src_pages_analytics_704b5be0._.js"
-    ],
     "/dashboard": [
       "static/chunks/[root of the server]__2fd0c79f._.js",
       "static/chunks/node_modules_next_c9e5c133._.js",
@@ -35,26 +25,6 @@
       "static/chunks/node_modules_9fc12222._.js",
       "static/chunks/src_pages_dashboard_5771e187._.js",
       "static/chunks/src_pages_dashboard_2dd1cce3._.js"
-    ],
-    "/payments": [
-      "static/chunks/node_modules_next_dist_eb81a647._.js",
-      "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_1b7400a8._.js",
-      "static/chunks/[root of the server]__73acb96f._.js",
-      "static/chunks/src_pages_payments_5771e187._.js",
-      "static/chunks/src_pages_payments_0a90b81a._.js"
-    ],
-    "/transactions": [
-      "static/chunks/node_modules_next_14ca55d5._.js",
-      "static/chunks/node_modules_react-dom_82bb97c6._.js",
-      "static/chunks/node_modules_@mui_system_esm_f8fdf8e1._.js",
-      "static/chunks/node_modules_@mui_material_289b1d49._.js",
-      "static/chunks/node_modules_@popperjs_core_lib_525b6336._.js",
-      "static/chunks/node_modules_axios_lib_9aa2336a._.js",
-      "static/chunks/node_modules_7f5c7779._.js",
-      "static/chunks/[root of the server]__7a1c451e._.js",
-      "static/chunks/src_pages_transactions_5771e187._.js",
-      "static/chunks/src_pages_transactions_0e72a5f2._.js"
     ],
     "/wallet": [
       "static/chunks/node_modules_next_14ca55d5._.js",

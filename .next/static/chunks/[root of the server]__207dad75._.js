@@ -603,22 +603,34 @@ const ApiService = {
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get('/wallet/transactions');
         return response.data;
     },
-    deposit: async (amount)=>{
+    deposit: async (walletId, amount, description, type, categoryid)=>{
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/wallet/deposit', {
-            amount
+            walletId,
+            amount,
+            description,
+            type,
+            categoryid
         });
         return response.data;
     },
-    withdraw: async (amount)=>{
+    withdraw: async (walletId, amount, description, type, categoryid)=>{
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/wallet/withdraw', {
-            amount
+            walletId,
+            amount,
+            description,
+            type,
+            categoryid
         });
         return response.data;
     },
-    transfer: async (recipientWalletNumber, amount)=>{
+    transfer: async (recipientWalletNumber, amount, description, type, categoryid, walletId)=>{
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/wallet/transfer', {
             recipientWalletNumber,
-            amount
+            amount,
+            description,
+            type,
+            categoryid,
+            walletId
         });
         return response.data;
     },
@@ -910,27 +922,27 @@ const WalletProvider = ({ children })=>{
     }["WalletProvider.useCallback[fetchTransactions]"], [
         user
     ]);
-    const deposit = async (amount)=>{
+    const deposit = async (walletId, amount, description, type, categoryid)=>{
         try {
-            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].deposit(amount);
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].deposit(walletId, amount, description, type, categoryid);
             await fetchWallet();
             return response.data;
         } catch (err) {
             throw err;
         }
     };
-    const withdraw = async (amount)=>{
+    const withdraw = async (walletId, amount, description, type, categoryid)=>{
         try {
-            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].withdraw(amount);
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].withdraw(walletId, amount, description, type, categoryid);
             await fetchWallet();
             return response.data;
         } catch (err) {
             throw err;
         }
     };
-    const transfer = async (recipientWalletNumber, amount, description)=>{
+    const transfer = async (recipientWalletNumber, amount, description, type, categoryid, walletId)=>{
         try {
-            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].transfer(recipientWalletNumber, amount, description);
+            const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].transfer(recipientWalletNumber, amount, description, type, categoryid, walletId);
             await fetchWallet();
             return response.data;
         } catch (err) {

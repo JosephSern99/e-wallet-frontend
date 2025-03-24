@@ -50,47 +50,51 @@ const TransferForm = ({ onSuccess }) => {
       .max(100, 'Description too long')
   });
 
-  const formik = useFormik({
-    initialValues: {
-      recipientWalletNumber: '',
-      amount: '',
-      description: ''
-    },
-    validationSchema: transferSchema,
-    onSubmit: async (values) => {
-      if (activeStep === 0) {
-        // In a real app, you would look up recipient details here
-        setRecipientInfo({
-          name: 'Jane Doe',
-          walletNumber: values.recipientWalletNumber
-        });
-        handleNext();
-        return;
-      }
-      
-      if (activeStep === 1) {
-        handleNext();
-        return;
-      }
-      
-      // Final step - process transfer
-      setError('');
-      setSuccess('');
-      setProcessing(true);
-      
+ const formik = useFormik({
+  initialValues: {
+    recipientWalletNumber: "WEDB5DBC8E7",
+    amount: '',
+    description: '',
+    type: 'TRANSFER',
+    categoryid: 2,
+    walletId: 1
+  },
+  validationSchema: transferSchema,
+  onSubmit: async (values) => {
+    if (activeStep === 0) {
+      // In a real app, you would look up recipient details here
+      setRecipientInfo({
+        name: 'joseph khoo',
+        walletNumber: "WEDB5DBC8E7"
+      });
+      handleNext();
+      return;
+    }
+    
+    if (activeStep === 1) {
+      handleNext();
       try {
-        await transfer(values.recipientWalletNumber, values.amount, values.description);
+        console.log('Submitting form with values:', values);
+        await transfer(values.recipientWalletNumber, values.amount, values.description, values.type, values.categoryid, values.walletId);
         setSuccess('Transfer successful!');
         formik.resetForm();
         if (onSuccess) onSuccess();
       } catch (err) {
+        console.error('Error during transfer:', err);
         setError(err.response?.data?.message || 'Failed to process transfer. Please try again.');
         handleBack();
       } finally {
         setProcessing(false);
-      }
     }
-  });
+      return;
+    }
+    
+    // Final step - process transfer
+    setError('');
+    setSuccess('');
+    setProcessing(true);
+  }
+});
 
   const handleNext = () => {
     setActiveStep((prevStep) => prevStep + 1);

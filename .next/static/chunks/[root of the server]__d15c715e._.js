@@ -603,9 +603,13 @@ const ApiService = {
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].get('/wallet/transactions');
         return response.data;
     },
-    deposit: async (amount)=>{
+    deposit: async (walletId, amount, description, type, categoryid)=>{
         const response = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].post('/wallet/deposit', {
-            amount
+            walletId,
+            amount,
+            description,
+            type,
+            categoryid
         });
         return response.data;
     },
@@ -699,7 +703,7 @@ const LoginForm = ()=>{
                 try {
                     const result = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$services$2f$api$2e$service$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"].login(values);
                     if (result) {
-                        router.push('/dashboard').then({
+                        router.push('/').then({
                             "LoginForm.useFormik[formik]": ()=>{
                                 window.location.reload();
                             }
